@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  color: #f7f8e1;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', serif;
+  font-size: 3.2rem;
+  /* text-shadow: 2px 2px #020318; */
+  margin-bottom: 32px;
+}
+
+p {
+  font-family: 'Gadugi', sans-serif;
+  font-size: 1rem;
+}
+
+.full-page {
+  height: 100%;
+}
+
+.full-page.background-img {
+  background: url(assets/cuddlebook-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 40rem;
+  flex-shrink: 1;
+  margin: 0 auto;
+  padding-top: 12vh;
+  text-align: center;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+}
+
+section.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
