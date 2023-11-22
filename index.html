@@ -7,15 +7,19 @@
     @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
   </style>
   <link rel="stylesheet" href="index.css">
+  <script src="scripts/ReviewItem.js" type="text/javascript" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 
 <body>
-  <div class="full-page background-img">
+  <article class="background-img">
     <main>
-      <section>
+      <section class="intro">
         <h1>Bedtime stories for bilingual families</h1>
-        <p>Download our mobile app to read bedtime stories in your native tongue to your children.</p>
-        <p>Ignite the love of literature, language and culture</p>
+        <div>
+          <p>Download our mobile app to read bedtime stories in your native tongue to your children.</p>
+          <p>Ignite the love of literature, language and culture</p>
+        </div>
       </section>
       <section class="badges">
         <a href="https://www.apple.com/uk/app-store/">
@@ -25,10 +29,38 @@
           <img src="assets/google-play-badge.png" height="54" />
         </a>
       </section>
+      <section class="reviews">
+        <review-item data-label="Finally, an app for parents raising bilingual children"></review-item>
+        <review-item data-label="I'm learning with my children and it feels so wholesome"></review-item>
+        <review-item
+          data-label="I don't have kids but it's once of the best resources for learning Cantonese"></review-item>
+      </section>
     </main>
-  </div>
-  <!-- <div class="full-page">
-  </div> -->
+  </article>
+  <article class="slide">
+    <section>
+      <div class="text">
+        <h1>Your bedtime library, translated</h1>
+        <p>Reading stories in multiple languages is now so easy with side-by-side English and your chosen language.</p>
+        <p>Current translations for Cantonese, French, Mandarin, Spanish, Vietnamese</p>
+      </div>
+      <div class="image">
+        <img src="assets/screenshot-1.png">
+      </div>
+    </section>
+  </article>
+  <article class="slide">
+    <section>
+      <div class="text">
+        <h1>Read and learn together</h1>
+        <p>Pronunciation coach and transliteration help you master new words.</p>
+      </div>
+      <div class="image">
+        <img src="assets/screenshot-2.png">
+      </div>
+    </section>
+  </article>
+
 </body>
 
 </html>
