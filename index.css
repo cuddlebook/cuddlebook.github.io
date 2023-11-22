@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   font-size: 16px;
+  background-color: #110B1F;
 }
 
 * {
@@ -62,7 +63,6 @@ p {
 
 article {
   min-height: 100vh;
-  background-color: #110B1F;
 }
 
 article.background-img {
