@@ -53,16 +53,19 @@ nav button#down-btn {
 
 h1 {
   font-family: 'Fredericka the Great', serif;
-  font-size: 3.2rem;
+  /* font-size: min(20px, 22px); */
+  font-size: clamp(2rem, 10vw, 4rem);
+  padding: 0.5rem;
 }
 
 p {
   font-family: 'Gadugi', sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 article {
   min-height: 100vh;
+  padding: 1rem;
 }
 
 article.background-img {
@@ -73,30 +76,43 @@ article.background-img {
 }
 
 article.background-img main {
-  max-width: 40rem;
-  flex-shrink: 1;
-  margin: 0 auto;
-  padding-top: 10%;
-  text-align: center;
   display: flex;
-  gap: 5rem;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: inherit;
+  text-align: center;
 }
 
-article.background-img section.intro {
+article.background-img main img {
+  align-self: flex-start;
+}
+
+article.background-img main section {
+  max-width: 700px;
+}
+
+article.background-img main section.intro {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-article.background-img section.badges {
+article.background-img main section.badges {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-article.background-img section.reviews {
+article.background-img main section.badges img {
+  max-height: 54px;
+  max-width: 100%;
+}
+
+article.background-img main section.reviews {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -107,7 +123,6 @@ article.slide section {
   flex-direction: column;
   min-height: 100vh;
   overflow-y: hidden;
-  padding: 3rem;
   gap: 4rem;
 }
 
