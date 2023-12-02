@@ -10,6 +10,22 @@
   <script src="scripts/main.js"></script>
   <script src="scripts/ReviewItem.js" type="text/javascript" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyB12Gm1N2ZxdezDxxB79sCFTfLaPxGpjOc",
+      authDomain: "cuddlebook-landing.firebaseapp.com",
+      projectId: "cuddlebook-landing",
+      storageBucket: "cuddlebook-landing.appspot.com",
+      messagingSenderId: "175857849766",
+      appId: "1:175857849766:web:59e411780605482aac2b67",
+      measurementId: "G-Z0KY55BF07"
+    };
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </head>
 
 <body>
