@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function getCurrentArticleIndex() {
-    const currentArticle = document.elementsFromPoint(0, 0).filter(element => element.tagName.toLowerCase() === "article")[0];
+    const currentArticle = document.elementsFromPoint(0, 10).filter(element => element.tagName.toLowerCase() === "article")[0];
     for (let i = 0; i < articles.length; i++) {
       if (articles[i].isEqualNode(currentArticle)) {
         return i;
