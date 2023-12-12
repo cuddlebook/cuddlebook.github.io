@@ -158,6 +158,12 @@ article.slide section .text .gradient-bedtime-stories {
   -webkit-text-fill-color: transparent;
 }
 
+article.slide section .text-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 article.slide section .image {
   flex: 1 0 33%;
   display: flex;
