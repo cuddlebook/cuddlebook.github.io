@@ -174,13 +174,13 @@ article.slide section .image {
 }
 
 article.slide section .image img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* Desktop */
 @media (min-width: 768px) {
   article.slide section .image img {
-    max-width: 100%;
+    max-width: 90%;
     width: unset;
   }
 }
