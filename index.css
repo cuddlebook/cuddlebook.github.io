@@ -9,6 +9,7 @@ body {
   margin: 0;
   color: #eee6f5;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 nav {
@@ -174,7 +175,7 @@ article.slide section .image {
 }
 
 article.slide section .image img {
-  /* width: 100%; */
+  max-width: 100%;
 }
 
 /* Desktop */
@@ -183,4 +184,16 @@ article.slide section .image img {
     max-width: 90%;
     width: unset;
   }
+}
+
+article.slide.contact {
+  background-color: #503d7a;
+}
+
+article.slide.contact section div.contact-us-content {
+  margin-top: 20vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
